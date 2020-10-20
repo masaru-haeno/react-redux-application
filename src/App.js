@@ -1,24 +1,34 @@
-import React, {Component} from 'react';
+import React from 'react';
 
+// class App extends Component {
+//   render() {
 
-// function App() {
-//   return (
-//     <h1>
-//         Hello World!!.
-//     </h1>
-//   );
+//     return (
+//       <React.Fragment>
+//         <label htmlFor="bar">bar</label>
+//         <input type="text" onChange={()=> console.log("Text Chenge")}></input>
+//       </React.Fragment>
+//     );
+//   }
 // }
 
-class App extends Component {
-  render() {
+const  App = () => {
+  return (
+    <div>
+      <Cat />
+      <Cat />
+      <Cat />
+      <Cat />
+    </div>
+  );
+}
 
-    return (
-      <React.Fragment>
-        <label htmlFor="bar">bar</label>
-        <input type="text" onChange={()=> console.log("Text Chenge")}></input>
-      </React.Fragment>
-    );
-  }
+const Cat = () => {
+  return (
+    <div>
+      <p>Mewow</p>
+    </div>
+  );
 }
 
 export default App;
